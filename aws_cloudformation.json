@@ -1,0 +1,55 @@
+{
+    "any-group-can-deploy": true,
+    "auto-historical-resources": false,
+    "build-items": [
+        {
+            "action-name": "Create AWS CloudFormation stack",
+            "continue-on-failure": false,
+            "deploy-seq": 1,
+            "description": null,
+            "enabled-environments": [],
+            "execute-in-parallel": false,
+            "id": "18",
+            "name": "Create AWS CloudFormation stack",
+            "run-on-scale-up": true,
+            "show-on-order-form": true,
+            "type": "plugin"
+        }
+    ],
+    "description": "Create and manage AWS CloudFormation stacks.",
+    "discovery-plugin": {
+        "href": "/api/v2/actions/157/",
+        "title": "Discover AWS CloudFormation"
+    },
+    "favorited": false,
+    "global-id": "BP-mc7hpykv",
+    "groups-that-can-deploy": [],
+    "groups-that-can-manage": [],
+    "icon": "cloud_formation.png",
+    "id": "8",
+    "is-orderable": true,
+    "management-actions": [],
+    "name": "AWS CloudFormation",
+    "resource-type": {
+        "icon": "",
+        "label": "Service",
+        "lifecycle": "ACTIVE",
+        "list-view-columns": [],
+        "name": "service",
+        "plural-label": null
+    },
+    "sequence": 0,
+    "show-recipient-field-on-order-form": false,
+    "teardown-items": [
+        {
+            "action-name": "Delete AWS CloudFormation",
+            "continue-on-failure": false,
+            "deploy-seq": -1,
+            "description": null,
+            "execute-in-parallel": false,
+            "id": "19",
+            "name": "Delete AWS CloudFormation",
+            "type": "teardown_plugin"
+        }
+    ]
+}
